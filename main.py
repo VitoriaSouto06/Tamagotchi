@@ -22,7 +22,7 @@ while True:
             print(f'\033[1;32m {bichinho.nome} já esta alimentado...\033[m\n')
         else:
             bichinho.alimentar()
-            print('\033[1;32mO bichinho foi alimentado\n\033[m')
+            print(f'\033[1;32m{bichinho.nome} foi alimentado\n\033[m')
 
     if opcao == 2:
         if bichinho.idade >50:
@@ -44,7 +44,7 @@ while True:
     if opcao == 4:
         n = str(input('Escolha o novo nome:'))
         bichinho.trocarNome(n)
-        print(f'\033[1;97m{bichinho.nome} é o novo nome do seu bichinho.\n\033[m')
+        bichinho.nome
 
     if opcao == 5:
         exit()
